@@ -1,0 +1,61 @@
+@import './range.css';
+.right_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid #c2c2c2;
+}
+.news_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+.news_card{
+    width: 29%;
+    margin: 20px 2%;
+}
+.search_news_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+.search_news_box h3{
+    margin: 0 0 10px 0;
+}
+/* changes_box */
+.changes_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.page_size{
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* BTN PANEL */
+.btn_panel{
+    width: 100%;
+    text-align: center;
+}
+.btn_panel button{
+    border: 1px solid #323232;
+    background: #fff;
+    color: #000;
+    height: 30px;
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 2px;
+}
+.active{
+    background: #000000!important;
+    color: white!important;
+}
