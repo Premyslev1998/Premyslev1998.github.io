@@ -1,0 +1,26 @@
+.news_input{
+    width: 300px;
+    padding: 0 20px;
+}
+.news_input h3{
+    text-align: center;
+}
+.input_box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.input_box label{
+    margin-bottom: 5px;
+}
+input{
+    padding: 5px;
+}
+.add_news_btn{
+    display: block!important;
+    margin: 0 auto!important;
+}
+.error{
+    color: orangered;
+    text-align: center;
+}
