@@ -1,0 +1,298 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font:
+		size: 14px
+		family: RobotoRegular, sans-serif
+		weight: 400
+	line-height: 28px	
+	min-width: em(560px) 
+	position: relative
+	overflow-x: hidden
+	color: #111
+
+.trans
+	transition: all .5s ease
+
+.hidden
+	display: none
+
+.button-wrap	
+	text-align: center
+a
+	outline: none!important
+
+
+strong, b 
+	font-family: "RobotoBold", sans-serif
+	font-weight: normal
+
+	
+h1, h2, h3, h4, h5, h6, .button,
+.h1, .h2, .h3, .h4, .h5, .h6
+	font-family: "RobotoCondensedBold", sans-serif
+	font-weight: normal
+	text-transform: uppercase
+
+h2, .h2
+	font-size: 35px
+	font-weight: 400
+	line-height: 40px
+	text-transform: uppercase
+
+h3, .h3
+	font-size: 16px
+	font-weight: 400
+	line-height: 40px
+	text-transform: uppercase
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+.text-left
+	text-align: left			
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background:
+		color: #fff
+		image: url(../img/preloader.gif)
+		repeat: no-repeat
+		position: center
+	z-index: 999
+	opacity: .4
+
+.cart-modal
+	display: none	
+	top: 50px
+	right: 67px
+	text:
+		align: center
+	padding:
+		top: em(10px)		
+	position: absolute
+	width: 173px
+	height: 45px
+	box:
+		shadow: 0 2px 3px rgba(0, 0, 0, 0.3)
+	background:
+		color: #707070
+	opacity: 0.76
+	border:
+		radius: 5px 5px 5px 5px
+	z-index: 999		
+	>span
+		color: #ffffff
+		font:
+			family: "Dosis"
+			size: 12px
+			weight: 400
+			style: italic
+		line:
+			height: 24px
+		text:
+			transform: uppercase
+		letter:
+			spacing: 0.6px
+	/* on activation */ 
+//	&.on
+//		opacity: 1
+//		visibility: visible
+
+.counter
+	position: absolute
+	top: 30%
+	right: 235px
+	width: 32px
+	height: 33px
+	box:
+		shadow: 0 2px 3px rgba(223, 81, 40, 0.48), inset 0 1px 0 rgba(251, 96, 51, 0.69)
+	border: 1px solid rgba(234, 71, 34, 0.52)
+	background
+		color: #fa5b33
+	background
+		image: linear-gradient(to top, #e84621 0%, #fd5f37 86%, #fd5f37 100%)
+	&-wrap
+		>p
+			margin:
+				top: -2px
+				bottom: 0
+				left: 6px
+				right: 0
+			color: #fff
+			font:
+				family: "Myriad Pro"
+				size: 11px
+				weight: 400
+			line:
+				height: 24px
+			letter:
+				spacing: 0.33px		
+		position: absolute
+		border:
+			radius: 100%
+		top: -25%
+		right: -24%	
+		width: 18px
+		height: 17px
+		box:
+			shadow: inset 0 1px 0 rgba(255, 158, 119, 0.54), 0 0 1px rgba(167, 45, 24, 0.68)
+		background:
+			color: #f54819
+			image: linear-gradient(to top, #fc2a00 0%, #f54819 100%)
+	>a
+		position: relative
+		>img
+			min:
+				height: 13px
+				width: 15px
+			position: absolute
+			top: 10px
+			left: 7px
+			z-index: 999	
+
+.top-nav
+	vertical:
+		align: middle
+	position: relative
+	padding: 0 em(282px)
+	min:
+		width: 100%
+	height: em(79px)
+	box:
+		shadow: inset 0 -1px 7px rgba(228, 91, 51, 0.75)
+	background:
+		color: $main-color
+		image: linear-gradient(to top, #f44620 0%, #fc6236 70%, #fa592b 97%, #fa592b 100%)
+	.describe
+		position: relative
+		>h1,
+		>p
+			position: absolute
+		.logo
+			overflow: hidden    
+			min:
+				height: 100%
+			padding: 0
+			&-wrap
+				margin:
+					bottom: -12px
+				>img
+					min:
+						width: 31px
+						height: 41px
+		h1
+			top: -10px
+			left: 35px
+			float: right
+			color: #fff
+			font:
+				family: "Chelsea Market"
+				size: 30px
+				weight: 400
+			line:
+				height: 28px
+			text:
+				transform: none
+		p
+			top: 6%
+			left: 147px
+			color: #fff
+			text:
+				transform: uppercase
+			font:
+				family: sans-serif
+				size: 11px
+				weight: 200
+			line:
+				height: 28px
+	.mnu
+		position: relative
+	nav.menu-wrap
+		position: relative
+		padding:
+			top: 11px
+	&_menu
+		list-style: none
+		padding: 0
+		display: flex
+		>li
+			margin:
+				right: em(20px)
+			>a	
+				color: #fff	
+				text:
+					transform: uppercase
+					decoration: none
+				font:
+					family: sans-serif
+					size: 10px
+				line:
+					height: 24px
+				letter:
+					spacing: 0.42px
+			&:hover,
+			&:focus
+				cursor: pointer
+				text:
+					decoration: none
+
+				
+/* Important styles */
+.toggle-mnu
+  display: inline-block
+  width: 28px
+  height: 30px
+  margin: 30px auto 10px
+
+
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+  content: ""
+  position: absolute
+  left: 0
+  top: -9px
+
+.toggle-mnu span:after
+  top: 9px
+
+.toggle-mnu span 
+  position: relative
+  display: block
+
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+  width: 100%
+  height: 5px
+  background-color: #fff
+  transition: all 0.3s
+  backface-visibility: hidden
+  border-radius: 2px
+
+
+/* on activation */
+.toggle-mnu.on span 
+  background-color: transparent
+
+.toggle-mnu.on span:before 
+  transform: rotate(45deg) translate(5px, 5px)
+
+.toggle-mnu.on span:after 
+  transform: rotate(-45deg) translate(7px, -8px)
+
+.toggle-mnu.on + #menu 
+  opacity: 1
+  visibility: visible
+
+//ALWAYS END
+@import "media"

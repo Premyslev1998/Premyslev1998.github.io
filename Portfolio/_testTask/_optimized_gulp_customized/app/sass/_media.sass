@@ -1,0 +1,347 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+@media only (min-width: 1200px) and (max-width : 1279px) 	
+	/* CSS stuff */
+	.counter
+		right: 215px
+	.top-nav
+		.describe
+			margin:
+				left: -20px
+			p
+				font:
+					size: 10px	
+		&_menu
+			>li
+				margin:
+					right: 11px
+	.top-line
+		padding: 0 em(226px)
+	.feedback
+		.search
+			right: 345px
+			&-social-links
+				>ul
+					>li
+						margin:
+							right: 1px	
+		.text-wrap
+			>p
+				font:
+					size: 12px
+		form
+			&.form-group
+				margin:
+					right: 58px								
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.counter
+		right: 125px
+	.describe
+		margin:
+			left: -81%
+	.mnu
+		margin:
+			right: -25%		
+	.top-nav
+		&_menu
+			>li
+				margin:
+					right: 7px
+	.top-line
+		padding: 0 em(200px)
+		.sf-menu
+			ul
+				min:
+					width: 10em!important
+			li
+				a
+					font:
+						size: 13px
+	.top-line .sf-menu li:focus>ul>li>a:focus::before, .top-line .sf-menu li:focus>ul>li>a:hover::before, .top-line .sf-menu li:hover>ul>li>a:focus::before, .top-line .sf-menu li:hover>ul>li>a:hover::before					
+		width: 123px
+
+	.feedback
+		.text-wrap
+			margin:
+				right: -30px
+			>p
+				font:
+					size: 11px
+		.search
+			right: 270px			
+		form
+			&.form-group
+				margin:
+					right: -20px
+							
+
+@media only (min-width: 992px) and (max-width : 1084px) 	
+	/* CSS stuff */
+	.counter
+		right: 150px
+	.top-nav
+		.describe
+			margin:
+				left: -93%
+			h1
+				top: -5px
+				left: 35px
+				font:
+					size: 21px	
+			p
+				top: 15%
+				left: 116px
+				font:
+					size: 8px	
+	.top-nav
+		&_menu
+			>li
+				margin:
+					right: 5px
+				>a
+					font:
+						size: 8px
+					letter:
+						spacing: 0.1
+	.top-line
+		padding: 0 em(220px)
+		.sf-menu
+			ul
+				min:
+					width: 8.5em!important
+			li
+				a
+					font:
+						size: 11px
+	.top-line .sf-menu li:focus>ul>li>a:focus::before, .top-line .sf-menu li:focus>ul>li>a:hover::before, .top-line .sf-menu li:hover>ul>li>a:focus::before, .top-line .sf-menu li:hover>ul>li>a:hover::before					
+		width: 105px
+
+	.feedback
+		padding: 0 13.625em
+		.text-wrap
+			    margin:
+			    	right: -61px
+		.search
+			right: 284px
+		form
+			&.form-group
+				margin: 0
+	    																			
+					
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.counter
+		right: 75px
+
+	.top-line
+		.sf-menu
+			display: none!important
+	.toggle-mnu
+		margin:
+			top: em(40px)
+			bottom: 0
+			left: 0
+			right: -10.25em!important
+
+	.top-nav
+		.describe
+			margin-left: -15.875em	 		
+		nav.menu-wrap
+			display: none
+			position: absolute
+			top: -5px
+			left: 55%
+			background-color: rgba(248, 84, 43, .5)
+			z-index: 25	
+			.top-nav_menu
+				display: block
+				min-width: 295px
+				float: right
+				text-align: right
+				top: 10px
+				border-bottom: #f5ecce 4px solid
+				border-top: darken(#f5ecce, 30%) 4px solid
+				>li
+					margin:
+						right: em(20px)
+					display: block
+					line-height: 0
+					padding: 0
+					a
+						display: block
+						line-height: 40px
+						padding:
+							top: 0
+							bottom: 0
+							left: 20px
+							right: 0
+						background-color: transparent
+						font-size: em(15px)
+						@export .trans
+						&:hover,
+						&:focus
+							cursor: pointer
+							color: $main-color
+							&::after
+								transform: translateY(-1px) scale(1)
+	
+	.feedback
+		padding: 0
+		min:
+			height: 6.75em
+		.wrapper
+			margin-left: auto
+			margin-right: auto
+			width: 24em
+			position: relative	
+		.text-wrap
+			>p
+				display: block
+				text-align: center
+				font-size: .9375em	
+			
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/*Disable Animation on Mobile Devices*/
+
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+/*==========  Mobile First Method  ==========*/
+@media only (min-width: 480px) and (max-width : 500px) 	
+	/* CSS stuff */
+	.toggle-mnu
+		margin-right: -10.25em!important	
+	.top-nav
+		nav.menu-wrap
+			left: -66px
+			>.top-nav_menu
+				width: em(276px)	
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+	.counter
+		right: 27px
+	.toggle-mnu
+		margin-right: -12.25em
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/	
+	.counter
+		right: 55px
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+	.menu-wrap
+		display: block!important
+
+@media only (min-width: 992px) and (max-width : 1125px) 	
+	/* CSS stuff */
+			
+
+@media only (min-width: 992px) and (max-width : 1200px) 	
+	/* CSS stuff */
+	.menu-wrap
+		display: block!important
+												
+
+@media only (min-width: 605px) and (max-width : 810px) 	
+	/* CSS stuff */
+	.top-nav
+		.describe
+			.logo
+				&-wrap
+					margin:
+						left: 25px
+			h1
+				top: -7px
+				left: 65px
+				font:
+					size: 21px	
+			p
+				font:
+					size: 8px
+
+@media only (min-width: 480px) and (max-width : 735px) 	
+	/* CSS stuff */						
+
+@media only (min-width: 616px) and (max-width : 678px) 	
+	/* CSS stuff */						
+	.describe
+		margin:
+			left: -170%
+		h1
+			top: -2px!important
+			left: 65px
+			font:
+				size: 16px!important
+		p
+			top: 13%!important
+			left: 127px!important
+			font:
+				size: 6px!important			
+				
+
+@media only (min-width: 480px) and (max-width : 615px) 	
+	/* CSS stuff */	
+	.describe
+		p
+			display: none
+
+@media only (min-width: 575px) and (max-width : 614px) 	
+	/* CSS stuff */
+
+@media only (min-width: 560px) and (max-width : 574px) 	
+	/* CSS stuff */	
+
+@media only (min-width: 320px) and (max-width : 604px) 	
+	/* CSS stuff */
+	
+	

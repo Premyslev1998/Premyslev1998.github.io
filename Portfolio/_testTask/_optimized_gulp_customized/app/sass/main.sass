@@ -1,0 +1,284 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/font-awesome/scss/fontawesome"
+@import "app/libs/magnific/magnific-custom"
+@import "app/libs/jQuery.mmenu/dist/jquery.mmenu.all"
+@import "app/libs/superfish/dist/css/superfish"
+
+*::-webkit-input-placeholder
+	font:
+		family: "Dosis"
+		size: 12px
+		weight: 300
+	line:
+		height: 24px
+	letter:
+		spacing: 0.36px
+
+
+*:-moz-placeholder
+	font:
+		family: "Dosis"
+		size: 12px
+		weight: 300
+	line:
+		height: 24px
+	letter:
+		spacing: 0.36px
+	
+*::-moz-placeholder
+	font:
+		family: "Dosis"
+		size: 12px
+		weight: 300
+	line:
+		height: 24px
+	letter:
+		spacing: 0.36px
+	
+
+*:-ms-input-placeholder
+	font:
+		family: "Dosis"
+		size: 12px
+		weight: 300
+	line:
+		height: 24px
+	letter:
+		spacing: 0.36px
+	
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+//Custom Styles Here
+.mm-menu.mm-menu_offcanvas
+	z-index: 4
+
+.mm-menu_theme-white .mm-listview a:not(.mm-btn_next) >img
+	display: none
+
+
+.top-line
+	position: relative	
+	background:
+		color: #fbf2d3
+	text:
+		align: center
+	padding: 0 em(266px)
+	min:
+		width: 100%
+	height: em(79px)	
+	vertical:
+		align: middle
+	a
+		color: darken(#7d7253, 50%)
+		font:
+			family: "Dosis"
+			size: 16px
+			weight: 400
+		line:
+			height: 24px
+		letter:
+			spacing: 0.48px
+		opacity: .65	
+	ul, li
+		list-style-type: none
+		padding: 0
+		margin:
+			top: 0
+			bottom: 0
+			left: 0
+			right: -11px
+	.sf-menu
+		height: em(79px)
+		margin: auto
+		float: none
+		display: inline-block
+		background:
+			color: #fbf2d3
+		ul
+			box:
+				shadow: none
+			min:
+				width: 12.25em			
+		li
+			background:
+				color: transparent
+			>a
+				>img
+					margin:
+						bottom: -2px
+						right: 5px	
+			&:hover,
+			&:focus
+				>ul
+					background:
+						color: #fbf2d3
+					border: none
+					>li
+						>a
+							position: relative
+							padding: 
+								top: 5px
+								bottom: 5px
+								right: 0
+								left: 0
+							&:hover,
+							&:focus
+								color: #fff	
+								&::before
+									content: ''
+									position: absolute
+									z-index: -1
+									top: 7px
+									left: 8px
+									bottom: 0
+									right: 0
+									width: 153px
+									height: 20px
+									background: #f45300
+									color: #fff
+									border: 1px solid #c84502
+									border:
+										radius: 5px																								
+				a
+					color: darken(#7d7253, 50%)
+			a
+				padding:
+					top: 20px
+				color: darken(#7d7253, 50%)
+				font:
+					family: "Dosis"
+					size: 16px
+					weight: 400
+				line:
+					height: 24px
+				letter:
+					spacing: 0.48px
+				border: none						
+		>li
+			display: inline-block
+			>a
+				&:hover,
+				&focus
+					background:
+						color: #fbf2d3
+						image: linear-gradient(to top, #fbf2d3 0%, #f0e4b8 99%, #f0e4b8 100%)
+
+	.mobile-mnu
+		padding: 20px 15px 5px 15px
+		color: $main-color
+		cursor: pointer
+		position: relative
+		z-index: 2
+		&::after
+			content: ''
+			display: inline-block
+			position: absolute
+			top: 50%
+			margin:
+				right: em(-180px)
+			right: 0
+			width: 0.9375em
+			height: 0.9375em
+			border-bottom: 2px solid #131313
+			border-right: 2px solid #131313
+			transform: rotate(45deg)
+		>b
+			display: block
+			text-align: center
+			font-family: "RobotoRegular", sans-serif
+			font-size: em(15px)	
+
+.feedback
+	vertical:
+		align: middle
+	position: relative
+	padding: 0 em(282px)
+	min:
+		width: 100%
+	height: em(60px)
+	box:
+		shadow: 0 5px 0 rgba(78, 78, 78, 0.05)
+	background:
+		color: #f9f9f9
+	z-index: 1	
+	.text-wrap
+		>p
+			color: #a7a49c
+			font:
+				family: "Dosis"
+				size: 14px
+				weight: 400
+				style: italic
+			line:
+				height: 24px
+			letter:
+				spacing: 0.42px
+	.search
+		right: 375px
+		position: absolute
+		&-social-links
+			>ul
+				list-style: none
+				padding: 0
+				margin: auto
+				float: none
+				box:
+					shadow: none		
+				>li
+					display: inline-block
+					margin:
+						right: 3px
+					&:last-child
+						margin: 0	
+					>a
+						>i
+							color: #a7a49c
+	form.form-group
+		margin:
+			right: 85px
+		float: right
+		display: inline-block
+		.form-control
+			color: #4c4c4c
+			font:
+				family: "Dosis"
+				size: 12px
+				weight: 300
+			line:
+				height: 24px
+			letter:
+				spacing: 0.36px
+			width: 130px
+			height: 27px
+			box:
+				shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.13)
+			background:
+				color: #ffffff
+			&.search-form
+				padding: 5px
+				color: #4c4c4c
+				background:
+					color: #ffffff
+					image: url(../img/_src/Shape_3.png)
+					repeat: no-repeat
+					position:
+						x: 100px
+						y: center
+				outline: none																										
+												
+
+
+
+//ALWAYS END
+@import "media"
