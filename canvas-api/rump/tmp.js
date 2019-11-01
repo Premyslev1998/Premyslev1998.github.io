@@ -968,7 +968,7 @@ function drawResult1(o) {
 		ctx.textAlign = "right";
 		ctx.font = fontsize +"px sans-serif";
 		ctx.textBaseline = "alphabetic";
-		ctx.fillText(" " + (o.angletxt || o.slopetxt), understrx + 190 + v.x, use_h + 15 + v.y); //round(angledeg,2)+"°"
+		ctx.fillText(" " + (o.angletxt || o.slopetxt), understrx + 190 + v.x, use_h + 15 + v.y); 
 
 		let vv, pp1, pp2;
 
