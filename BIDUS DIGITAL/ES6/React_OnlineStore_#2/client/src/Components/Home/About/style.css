@@ -1,0 +1,39 @@
+.about {
+    align-items: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.about_box {
+    width: 25%;
+    padding: 10px;
+}
+
+.logo_about{
+    width: 90%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.about_box h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #f43f2a;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .about_box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about_box {
+        width: 100%;
+    }
+
+    .logo_about {
+        max-width: 200px;
+    }
+}

@@ -1,0 +1,116 @@
+{
+  "all": {
+    "close": "Close",
+    "chat_btn": "Leave suggestion",
+    "privacy_policy": "Privacy policy",
+    "terms_of_use": "User agreement",
+    "public_offer": "Public offer"
+  },
+
+  "header": {
+    "city": "City",
+    "language": "Language",
+    "sign_in": "Sign in",
+    "countries": "Countries of delivery ",
+    "shipping": "Shipping and payment",
+    "info_partners": "Information for partners",
+    "basket": "Cart"
+  },
+
+  "footer": {
+    "big_text": "",
+    "placeholder": "Enter your email",
+    "sub_info": {
+      "text_1": "By subscribing to the newsletter, you agree and consent to ",
+      "href_1": " user agreement ",
+      "text_2": " and ",
+      "href_2": "privacy policy"
+    },
+    "columns": {
+      "about_company": "About the company",
+      "help": "Help",
+      "catalog": "Catalogue"
+    }
+  },
+
+  "nav_bar": {
+    "main": "Home page",
+    "catalog": "Catalogue"
+  },
+
+  "slider": {
+    "rec_products": "Recommended items"
+  },
+
+  "product_box": {
+    "buy": "Purchase",
+    "quick_order": "Quick order"
+  },
+
+  "main": {
+    "tab_panel": {
+      "tab_1": "Today’s deals",
+      "tab_2": "Popular",
+      "tab_3": "New"
+    }
+  },
+
+  "category": {
+    "show_more": "Show more",
+    "count_items": " items",
+    "in_stock": "In stock"
+  },
+
+  "product": {
+    "ratings": "Ratings",
+    "characteristics": "Main characteristics",
+    "tab_panel": {
+      "description": "Description",
+      "specifications": "Characteristics",
+      "comments": "Comments"
+    }
+  },
+
+  "basket": {
+    "title": "Cart",
+    "city_info": "The available methods of shipping and payment depend on the selected region",
+    "clear_basket": "Your cart is empty",
+    "out_basket": "Back to shopping",
+    "table": {
+      "name": "Item name",
+      "photo": "Photo",
+      "price": "Price",
+      "amount": "Amount",
+      "sum": "Sum",
+      "clear": "Clear",
+      "total": "Total",
+      "checkout": "Place your order"
+    }
+  },
+
+  "modal": {
+    "buy": {
+      "product_in_basket": "The item is added to the cart",
+      "go_basket": "Go to cart"
+    },
+    "city": {
+      "take_city": "Select city",
+      "your_city": "Your city ",
+      "enter_btn": "Correct",
+      "write_city": "Enter your city",
+      "choose_btn": "Select"
+    },
+    "mob_header": {
+      "lk": "Personal account"
+    },
+    "form": {
+      "name_form": "Leave suggestion",
+      "label_1": "Enter your Email",
+      "placeholder_1": "Email",
+      "label_2": "Enter your suggestion",
+      "placeholder_2": "We will consider each review to create the best marketplace for you",
+      "btn_form": "Send",
+      "success": "Your offer has been sent successfully"
+    }
+  }
+}

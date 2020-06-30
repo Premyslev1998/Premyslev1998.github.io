@@ -1,0 +1,100 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css";
+/* SLIDER */
+.slider_container{
+    width: 100%;
+    margin: 0 auto;
+}
+.back{
+    min-height: 400px;
+    height: 60vh;
+    position: relative;
+    margin-bottom: 30px;
+}
+.slider_1{
+    background: url("../../Static/img/backgound_slider/1.jpg") no-repeat center center;
+    background-size: cover;
+}
+.slider_2{
+    background: url("../../Static/img/backgound_slider/2.jpg") no-repeat center center;
+    background-size: cover;
+}
+.main_slider_btn{
+    position: absolute;
+    width: 270px;
+    left: 50%;
+    transform: translateX(-135px);
+    bottom: 0;
+}
+.main_slider{
+    margin-bottom: 80px;
+}
+.main_slider .slick-prev{
+    background: url(../../Static/img/slider/main_back_slider.svg)!important;
+    left: 20px!important;
+    -webkit-box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3)!important;;
+    -moz-box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3)!important;;
+    box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3)!important;;
+}
+.main_slider .slick-next, .main_slider .slick-next:hover, .main_slider .slick-next:focus{
+    background: url(../../Static/img/slider/main_next_slider.svg)!important;
+    right: 20px!important;
+    -webkit-box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3)!important;;
+    -moz-box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3)!important;;
+    box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3)!important;;
+}
+.main_slider_content{
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px 20px 20px
+}
+.main_slider_img{
+    margin-left: 5%;
+    width: 35%;
+}
+.main_slider_img img {width: 100%}
+.slider_title{
+    margin-top: 30px;
+    font-size: 35px;
+    color: #33b5e5;
+    font-family: "Arkhip_font", sans-serif;
+    text-transform: uppercase;
+}
+.right_slider{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main_slider_btn_panel a button{
+    background: #33b5e5!important;
+    color: #fff!important;
+    -webkit-box-shadow: 0 10px 35px -8px rgba(51,182,229,0.5)!important;
+    -moz-box-shadow: 0 10px 35px -8px rgba(51,182,229,0.5)!important;
+    box-shadow: 0 10px 35px -8px rgba(51,182,229,0.5)!important;
+}
+.main_slider_btn_panel button{
+    margin-left: 30px;
+    color: #c2c2c2;
+    background: #fff;
+    -webkit-box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3)!important;;
+    -moz-box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3)!important;;
+    box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3)!important;;
+}
+.main_slider .slick-next{right: 0}
+.main_slider .slick-prev{left: 0}
+/* End slider */
+@media screen and (max-width: 700px) {
+    .back{
+        min-height: auto;
+        height: 300px;
+    }
+    .main_slider{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 430px){
+    .back{
+        height: 240px;
+    }
+}

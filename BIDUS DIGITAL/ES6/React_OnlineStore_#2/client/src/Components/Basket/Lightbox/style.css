@@ -1,0 +1,96 @@
+.form_modal {
+    margin: 20px 0;
+    min-width: 340px;
+}
+
+.content_form_modal {
+    padding: 40px;
+}
+
+.form_modal h4 {
+    font-size: 30px;
+}
+
+.title_modal {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title_modal img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.form_suggestion {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form_suggestion label {
+    margin-bottom: 10px;
+}
+
+.form_suggestion input {
+    border-radius: 5px;
+    border: 1px solid #f43f2a;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.content_form_modal button {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.mail_status{
+    text-align: center;
+    color: #f43f2a;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.success_form_sent {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.success_form_sent p {
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+}
+
+.success_form_sent button {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .form_modal h4 {
+        font-size: 25px;
+    }
+
+    .form_suggestion label {
+        font-size: 14px;
+    }
+
+    .form_suggestion input{
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .success_form_sent p {
+        font-size: 14px;
+    }
+}

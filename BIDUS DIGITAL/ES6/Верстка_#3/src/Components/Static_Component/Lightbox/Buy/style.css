@@ -1,0 +1,33 @@
+.buy_modal{
+    padding: 60px 20px 20px 20px;
+}
+.mui-fixed{padding-right: 0!important;}
+.modal_basket_add{
+    display: flex;
+    margin-top: 50px;
+}
+.basket_modal_btn{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.basket_modal_btn button{
+    margin: 0 20px;
+}
+.bye_panel_btn{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.bye_panel_btn a{
+    width: 100%;
+    max-width: 270px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 600px){
+    .bye_panel_btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bye_panel_btn button{margin: 10px 0 0 0}
+}

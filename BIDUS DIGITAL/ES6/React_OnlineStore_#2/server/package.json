@@ -1,0 +1,36 @@
+{
+  "name": "podbereg",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sergey"
+  },
+  "license": "MIT",
+  "scripts": {
+    "client": "cd ../client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "dev:server": "cd ../client && yarn build && cd ../server && yarn start",
+    "start": "node server.js",
+    "heroku-postbuild": "cd ../client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-subdomain": "^1.0.5",
+    "http": "^0.0.0",
+    "mongoose": "^5.4.11",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.0.0",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  },
+  "proxy": "http://localhost:3012/",
+  "keywords": [
+    "node",
+    "express",
+    "create-react-app"
+  ]
+}

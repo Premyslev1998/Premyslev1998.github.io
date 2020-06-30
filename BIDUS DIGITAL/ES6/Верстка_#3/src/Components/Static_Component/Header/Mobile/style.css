@@ -1,0 +1,41 @@
+.mobile_screen_header{
+    display: none;
+    position: static;
+    top: 0;
+    background: #323232;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 320px;
+}
+.header_logo_mobile{
+    width: 100%;
+    max-width: 120px;
+    cursor: pointer;
+}
+.burger{
+    color: #ffffff;
+    cursor: pointer;
+    width: 20px;
+    display: flex;
+    align-items: center;
+}
+.burger img{
+    width: 100%;
+}
+.icon_mobile_h{
+    width: 20px;
+    margin-right: 20px;
+}
+.right_mobile_position{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 750px){
+    .full_screen_header{
+        display: none;
+    }
+    .mobile_screen_header{
+        display: flex;
+    }
+}

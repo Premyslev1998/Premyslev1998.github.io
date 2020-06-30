@@ -1,0 +1,96 @@
+.product_box{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.product_box img{
+    width: 100%;
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product_box b{
+    width: 100%;
+}
+
+.product_box h4{
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.size_panel{
+    display: flex;
+    margin: 20px 0 10px 0;
+    background: #e8e8e8;
+    border-radius: 5px;
+}
+
+.size_panel span{
+    width: 50%;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active_tab {
+    color: #ffffff;
+}
+
+.price_panel {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product_box h6 {
+    color: #f43f2a;
+    font-size: 22px;
+}
+
+.buy{
+    border: 0;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 6px 15px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100px;
+}
+
+/* water*/
+.water_price {
+    margin: 20px 0 15px 0;
+    text-align: center;
+}
+
+.water_buy {
+    margin: 0 auto;
+    display: block;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1000px){
+    .product_box {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .product_box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .product_box {
+        width: 100%;
+    }
+}

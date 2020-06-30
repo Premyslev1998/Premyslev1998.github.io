@@ -1,0 +1,211 @@
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe_panel_home > .container{
+    align-items: center;
+    justify-content: center;
+}
+.subscribe_panel > .container{
+    align-items: center;
+}
+.subscribe_panel, .subscribe_panel_home{
+    padding: 17px 0;
+    background: #323232;
+    color: #fff;
+}
+.f_logo{
+    width: 100%;
+    max-width: 200px;
+}
+.subscribe_panel a, .subscribe_panel_home a{
+    color: #fff;
+    font-weight: bold;
+}
+.footer_bottom{ background: #ffffff }
+.full_footer_img{
+    max-width: 300px;
+    margin: 0 30px 30px 0;
+    display: block;
+}
+.top_footer p{
+    margin-bottom: 10px;
+    line-height: normal;
+}
+/* form */
+.main_form_wrap{
+    padding: 2px;
+    display: flex;
+    position: relative;
+    max-width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background: #ffffff;
+    background: -moz-linear-gradient(left, #ffffff 0%, #33b5e5 100%);
+    background: -webkit-linear-gradient(left, #ffffff 0%,#33b5e5 100%);
+    background: linear-gradient(to right, #ffffff 0%,#33b5e5 100%);
+    overflow: hidden;
+    margin: 0 30px;
+}
+.main_form_wrap input{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 0;
+    top: 0;
+    padding-left: 15px;
+    padding-right: 55px;
+}
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50px;
+    padding: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #33b5e5;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.form_alert{
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 50px;
+    background-color: #33b5e5;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_alert p{
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.political{
+    width: 510px;
+    font-size: 18px;
+}
+.political i{
+    color: #33b5e5;
+}
+/* center */
+.footer_center .container{
+    padding: 20px;
+    font-size: 18px;
+}
+.f_left_panel{
+    padding-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    max-width: 340px;
+}
+.f_left_panel button{
+    margin-bottom: 20px;
+}
+.footer_columns{
+    display: flex;
+    font-size: 18px;
+}
+.f_section li{margin-bottom: 10px}
+.f_section{margin-left: 50px}
+.f_section:first-child{margin-left: 0}
+/* bottom */
+.footer_bottom .container{padding-bottom: 40px}
+.f_last_line{display: flex}
+.f_last_line li{margin-right: 20px}
+.f_last_line li:last-child{margin-right: 0}
+/* TOP footer */
+.top_footer{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.top_footer .container{display: block}
+.top_footer img{
+    width: 100%;
+    float: left;
+    max-width: 280px;
+    margin: 0 30px 30px 0;
+    display: block;
+}
+.bottom_profit{
+    display: none;
+    margin-bottom: 20px;
+}
+/* MEDIA */
+@media only screen and (max-width: 980px) {
+    .subscribe_panel .container, .subscribe_panel_home .container{
+        text-align: center;
+        flex-direction: column;
+    }
+    .main_form_wrap{
+        margin: 10px 0;
+    }
+    .footer_bottom{text-align: center}
+    .political{
+        width: 100%;
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .footer_center .container{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f_left_panel p{
+        margin-top: 20px;
+    }
+    .f_left_panel{
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .footer_columns{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .f_section{
+        margin: 0 20px;
+    }
+    .footer_bottom .container{
+        padding-bottom: 20px;
+    }
+    .hidden_profit_by{
+        display: none;
+    }
+    .bottom_profit{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .left_footer_subscribe{
+        flex-direction: column;
+    }
+    .footer_columns{flex-direction: column}
+    .f_section{margin: 10px 0}
+    .f_last_line{flex-direction: column-reverse}
+    .footer_bottom .container{justify-content: center}
+    .f_last_line li{margin-bottom: 10px}
+}
+
+@media only screen and (max-width: 550px) {
+    .top_footer img{
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+}

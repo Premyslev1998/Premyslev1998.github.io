@@ -1,0 +1,211 @@
+/* Name */
+.goods_box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+.product_name_title{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: "Arkhip_font", sans-serif;
+}
+.assessment{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.assessment p{
+    text-align: right;
+}
+.star_box{
+    width: 115px;
+    margin-bottom: 10px;
+}
+.star{
+    width: 18px;
+    margin-right: 5px;
+}
+.mini_name{
+    margin-top: 10px;
+}
+/* INFO */
+.product_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 20px 0 30px 0;
+}
+/* photo slider*/
+.photo_slider{
+    cursor: pointer;
+    width: 90px;
+}
+.photo_slider_box{
+    width: 80px;
+    margin: 5px 5px;
+}
+.photo_slider_box img{
+    width: 100%;
+}
+.photo_slider_box:hover img{
+    -webkit-filter: opacity(50%);
+    filter: opacity(50%);
+}
+/* Product_info */
+.photo_product, .photo_product_mobile{
+    max-width: 400px;
+    margin: 0 20px;
+    width: 100%;
+}
+.photo_product_mobile{
+    max-width: 350px;
+    display: none;
+}
+.data_product{
+    width: 100%;
+    max-width: 500px;
+    font-size: 18px;
+}
+.modification_open:hover{
+    cursor: pointer;
+    color: #33b5e5;
+}
+.data_btn_panel{
+    padding: 25px 0;
+    display: flex;
+}
+.data_btn_panel a{
+    width: 30%;
+    margin-right: 3%;
+}
+.center_data_panel{
+    margin: 0 30px;
+}
+.price_valuta{
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 35px;
+}
+.price_valuta .price_currency,
+.price_valuta .price_currency i{
+    color: #c2c2c2;
+    font-size: 25px;
+    font-family: "Arkhip_font", sans-serif;
+}
+.price_valuta .price_currency:first-child,
+.price_valuta .price_currency:first-child i{
+    font-size: 25px;
+    color: #323232;
+}
+.are_available{
+    color: #c2c2c2;
+    margin-bottom: 20px;
+}
+.bye_panel{
+    display: flex;
+    flex-direction: column;
+}
+.bye_panel button{
+    max-width: 250px;
+}
+.center_info_product{
+    padding: 0 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: normal;
+}
+.center_info_product section{
+    margin: 20px 0 35px 0;
+}
+.tab_panel_prod{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+/* MEDIA */
+@media screen and (max-width: 1000px){
+    .photo_product{
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 800px){
+    .tab_panel_prod{
+        flex-direction: column;
+    }
+    .tab_panel_prod button:nth-child(2){
+        margin: 10px 0;
+    }
+    /* TITLE */
+    .goods_box{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .assessment{
+        margin: 10px 0 0 0;
+        align-items: center;
+    }
+    /*product row*/
+    .photo_product{
+        display: none;
+    }
+    .photo_product_mobile{
+        display: block;
+    }
+    .product_row{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .photo_slider{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .photo_slider_box{
+        width: 100px;
+    }
+    /* data*/
+    .bye_panel{
+        align-items: center;
+    }
+    .price_valuta{
+        justify-content: center;
+    }
+    .data_product{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #33b5e5;
+    }
+}
+@media screen and (max-width: 450px){
+    .product_name_title{
+        font-size: 28px;
+    }
+    .data_btn_panel{
+        flex-direction: column;
+        align-items: center;
+    }
+    .data_btn_panel a{
+        max-width: 230px;
+        margin: 0 auto 20px auto;
+        width: 100%;
+    }
+    .center_data_panel{
+        margin: 10px 0;
+    }
+    .photo_product_mobile{
+        max-width: 250px;
+    }
+    .photo_slider_box{
+        width: 70px;
+    }
+}
+

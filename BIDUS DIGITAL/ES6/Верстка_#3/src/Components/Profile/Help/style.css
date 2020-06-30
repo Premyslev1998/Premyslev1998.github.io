@@ -1,0 +1,28 @@
+.type_help{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.help_profile h5{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.type_help button:nth-child(2){margin: 0 150px}
+.form_help{
+    display: flex;
+    border-bottom: 2px solid #c2c2c2;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.send_help_form{
+    display: block;
+    margin: 0 auto;
+}
+.column_form:first-child{
+    width: 45%;
+    margin-right: 5%;
+}
+.column_form{width: 50%}
+.column_form input{margin-bottom: 30px}
+.column_form input, .column_form textarea{width: 100%}
+.column_form textarea{height: 190px}

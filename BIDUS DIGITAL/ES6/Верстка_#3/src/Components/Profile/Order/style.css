@@ -1,0 +1,11 @@
+.order_box{
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.order_box p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,36 @@
+.address_panel{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #c2c2c2;
+    display: flex;
+}
+.address_box{
+    height: 200px;
+    width: 24%;
+    margin: 0 0.5%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.address_box:hover{
+    -webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.6);
+    -moz-box-shadow:    0 0 10px 0 rgba(50, 50, 50, 0.6);
+    box-shadow:         0 0 10px 0 rgba(50, 50, 50, 0.6);
+}
+.btn_address{
+    font-family: Arkhip_font, sans-serif;
+    font-size: 18px;
+    color: #c2c2c2;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+.btn_address:hover, .address_edit p:hover{color: #33b5e5}
+.address_edit{
+    display: flex;
+    justify-content: space-between;
+    color: #c2c2c2;
+    cursor: pointer;
+}
+.add_address{flex-direction: column-reverse}

@@ -1,0 +1,65 @@
+.profile_main{margin-bottom: 50px}
+.tab_profile_panel{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.tab_profile{
+    border: 0;
+    font-size: 18px;
+    width: 100%;
+    max-width: 340px;
+    border-radius: 30px;
+    padding: 17px 0;
+    cursor: pointer;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    color: #323232;
+    background: #fff;
+    -webkit-box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 35px -8px rgba(0,0,0,0.3);
+    text-align: center;
+    margin: 0 20px
+}
+.tab_profile:hover{color: #323232!important;}
+.tab_profile_active:hover{color: #ffffff!important;}
+.tab_profile_active{
+    background: #33b5e5!important;
+    color: #ffffff!important;
+    -webkit-box-shadow: 0 10px 35px -8px rgba(51,182,229,0.5) !important;
+    -moz-box-shadow: 0 10px 35px -8px rgba(51,182,229,0.5) !important;
+    box-shadow: 0 10px 35px -8px rgba(51,182,229,0.5) !important;
+}
+.tab_profile:first-child{margin: 0 20px 0 0}
+.tab_profile:last-child{margin: 0 0 0 20px}
+.p_row_input{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.p_row_password{
+    padding: 30px 0 50px 0;
+    border-top: 2px solid #c2c2c2;
+    border-bottom: 2px solid #c2c2c2;
+}
+.p_input_box{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.p_input_box label{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/****** ADDRESS ******/
+
+/***** МОИ ЗАКАЗЫ ******/
+
+
+/***** ИЗБРАННОЕ ******/
+
+/***** ПОМОЩЬ ******/

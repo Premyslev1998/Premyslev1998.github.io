@@ -1,0 +1,214 @@
+.basket_page {
+    width: 100%;
+}
+
+.title_basket {
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Empty */
+.empty_basket {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 92px;
+    padding-bottom: 115px;
+    min-width: 320px;
+}
+
+.empty_basket p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.empty_basket a {
+    z-index: 5;
+}
+
+@media only screen and (max-height: 550px) {
+    .empty_basket {
+        height: 255px;
+        padding-bottom: 0!important;
+        padding-top: 0!important;
+        position: static;
+    }
+}
+
+/* !empty */
+.basket_table {
+    width: 100%;
+    flex-direction: column;
+}
+
+.row_table, .row_table_mini {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.row_table div {
+    font-size: 20px;
+}
+
+.header_row div {
+    font-size: 26px;
+}
+
+.b_name {
+    width: 25%;
+}
+
+.b_name h3 {
+    font-size: 22px;
+}
+
+.b_name span {
+    font-size: 14px;
+}
+
+.b_price {
+    width: 25%
+}
+
+.b_count {
+    width: 25%
+}
+
+.count_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count_box span {
+    margin: 0 10px;
+}
+
+.btn_count {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_count img {
+    width: 50%;
+}
+
+.b_sum {
+    width: 25%;
+    text-align: right;
+}
+
+.delete_product {
+    width: 60px;
+    text-align: right;
+}
+
+.delete_product img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.b_price, .b_count {
+    text-align: center;
+}
+
+.line_basket {
+    height: 20px;
+    background: url('../../Static/img/basket/basket_line.svg');
+    background-size: cover;
+    width: 100%;
+}
+
+/* MINI*/
+.row_table_mini {
+    display: none;
+    flex-direction: column;
+    max-width: 600px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.b_mini_top, .b_mini_bottom {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+
+.b_mini_price {
+    font-size: 20px;
+}
+
+.b_mini_delete {
+    cursor: pointer;
+    width: 20px;
+}
+
+.b_mini_right{
+    width: 115px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Panel */
+.basket_buy_panel {
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.sum_zak{
+    font-size: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.or_sum{
+    margin-left: 5px;
+}
+
+.basket_buy_panel button, .empty_basket button {
+    border: 0;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/*Media */
+@media only screen and (max-width: 750px) {
+    .row_table, .hid_sum {
+        display: none;
+    }
+
+    .row_table_mini {
+        display: flex;
+    }
+
+    .basket_buy_panel{
+        flex-direction: column-reverse;
+    }
+    .basket_buy_panel a{
+        margin-top: 20px;
+    }
+}

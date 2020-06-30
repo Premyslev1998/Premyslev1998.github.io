@@ -1,0 +1,23 @@
+.navigation_line{
+    font-size: 18px;
+    color: #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+}
+.navigation_history{
+    padding: 20px 0;
+    display: flex;
+}
+.navigation_history a{
+    color: #c2c2c2
+}
+.navigation_history a:after{
+    margin: 0 5px;
+    content: "/";
+    color: #c2c2c2;
+}
+.navigation_history li:last-child:after{
+    content: ""
+}
+@media only screen and (max-width: 420px) {
+    .navigation_line{display: none}
+}

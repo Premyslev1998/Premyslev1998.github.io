@@ -1,0 +1,77 @@
+@import "reset.css";
+
+body {
+    min-width: 330px;
+}
+
+img, .basket_table, .buy, .size_panel {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+::-webkit-input-placeholder {
+    color: #323232
+}
+
+::-moz-placeholder {
+    color: #323232
+}
+
+:-moz-placeholder {
+    color: #323232
+}
+
+:-ms-input-placeholder {
+    color: #323232
+}
+
+/** START SETTINGS **/
+.vh_block {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.my_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.orange_color {
+    color: #f43f2a;
+}
+
+.grad,
+.active_tab,
+.btn_count,
+.content_form_modal button,
+.empty_basket button,
+.basket_buy_panel button {
+    background: #f43f2a;
+    background: -moz-linear-gradient(left, #f43f2a 0%, #e8744f 100%);
+    background: -webkit-linear-gradient(left, #f43f2a 0%, #e8744f 100%);
+    background: linear-gradient(to right, #f43f2a 0%, #e8744f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f43f2a', endColorstr='#e8744f', GradientType=1);
+}
+
+h3 {
+    color: #000000;
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+}

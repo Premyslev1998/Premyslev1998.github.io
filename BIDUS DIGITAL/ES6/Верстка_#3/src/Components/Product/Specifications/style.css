@@ -1,0 +1,38 @@
+.specifications table{width: 100%}
+tr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+td{
+    width: 47%;
+    margin-right: 3%;
+}
+.full_td{
+    width: 97%;
+    color: #33b5e5;
+    margin: 10px 0;
+}
+@media screen and (max-width: 900px){
+    td:first-child{
+        text-align: right;
+    }
+    .full_td{
+        text-align: center!important;
+    }
+    td:first-child:after{
+        content: ":";
+    }
+}
+@media screen and (max-width: 450px){
+    tbody tr{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    td:first-child{text-align: left}
+    td{
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+}

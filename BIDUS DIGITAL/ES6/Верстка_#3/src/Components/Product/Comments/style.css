@@ -1,0 +1,24 @@
+.comments_list{
+    margin-bottom: 50px
+}
+.comments_list li{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.comment_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.rating_comment{
+    display: flex;
+    align-items: center;
+}
+.rating_comment span{
+    margin: 0 20px;
+}
+.add_comment_box{
+    display: flex;
+    align-items: center;
+}
+.add_comment_box button{margin-right: 30px}
