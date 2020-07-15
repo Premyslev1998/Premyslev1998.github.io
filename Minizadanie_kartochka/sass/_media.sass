@@ -1,0 +1,154 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.main
+		&-wrap
+			&-content
+				padding: 
+					top: 15px
+					bottom: 15px
+					left: 15px
+					right: 0
+				&-right
+					padding:
+						left: em(25px)	
+				p
+					font:
+						size: 12px
+				.comment_over
+					bottom: 1px
+					left: 20px			
+
+
+								
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.main
+		&-wrap
+			&-content
+				h3
+					font:
+						size: 12px
+				a
+					>h3
+						font:
+							size: 12px 		
+				.comment_over
+					height: 15px
+					bottom: 4px
+			.img-wrap
+				padding:
+					//right: 5%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.main
+		&-wrap
+			&-content
+				.comment_over
+					height: 20px
+					bottom: 6px
+					left: 0
+				&-right
+					padding: 5px 0
+				>h1
+					font:
+						size: 15px
+				padding: 0
+				margin: 0
+				text:
+					align: center
+				h3
+					line:
+						height: 2	
+			.img-wrap
+				display: inline
+				text:
+					align: center
+
+
+	/*Disable Animation on Mobile Devices*/
+	
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+@media only (min-width: 480px) and (max-width : 664px) 	
+	/* CSS stuff */
+	
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/	
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+	.main
+		&-wrap
+			&-content
+				.comment_over
+					height: 38px
+					bottom: 0
+@media only screen and (min-width : 2000px)
+	/**/
+	.main
+		&-wrap
+			&-content
+				.comment_over
+					height: 42px		
+
+@media only (min-width: 605px) and (max-width : 810px) 	
+	/* CSS stuff */
+	
+@media only (min-width: 320px) and (max-width : 604px) 	
+	/* CSS stuff */
+	
+	
