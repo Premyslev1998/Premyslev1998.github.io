@@ -1,0 +1,158 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/font-awesome/scss/fontawesome"
+@import "app/libs/magnific/magnific-custom"
+
+*::-webkit-input-placeholder
+	color: $main-color
+	font-family: "OpenSans-Regular", sans-serif
+	font-size: 16px
+	font-weight: 300
+	line-height: 40px
+	opacity: 1
+
+*:-moz-placeholder
+	color: $main-color
+	font-family: "OpenSans-Regular", sans-serif
+	font-size: 16px
+	font-weight: 300
+	line-height: 40px
+	opacity: 1
+
+*::-moz-placeholder
+	color: $main-color
+	font-family: "OpenSans-Regular", sans-serif
+	font-size: 16px
+	font-weight: 300
+	line-height: 40px
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: $main-color
+	font-family: "OpenSans-Regular", sans-serif
+	font-size: 16px
+	font-weight: 300
+	line-height: 40px
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+//Custom Styles Here
+.loader
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background:
+		color: #fff
+		image: url(../img/preloader.gif)
+		repeat: no-repeat
+		position: center
+	z-index: 999
+	opacity: .4
+
+.btn
+	margin:
+		top: em(25px)
+		bottom: auto
+		left: auto
+		right: auto
+	display: inline-flex
+	padding: 10px 20px
+	color: #fff
+	border:
+		radius: 5px
+	text:
+		decoration: none 
+	font:
+		size: 16px
+		weight: 700
+	background:
+		color: #009adf
+	border:
+		bottom: 5px solid darken(#009adf, 10%)	
+	&:hover
+		color: #fff
+		text:
+			decoration: none
+		background:
+			color: lighten(#009adf, 2%)	
+
+.main
+	//min:
+	//	height: em(680px)
+	align:
+		items: center
+	text:
+		shadow: 0 1px 0 #000000
+	color: #ffffff
+	font:
+		family: sans-serif
+		//size: 36px
+		weight: 400
+	background:
+		image: url('../img/mainBg.png')
+		position: top center
+		size: cover
+	position: relative
+	height: 100vh
+	&-overlay
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background:
+			image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%) 
+		//opacity: -1
+		z:
+			index: 0
+	.cards
+		position: relative
+		padding:
+			top: em(25px)
+		text:
+			align: center		
+		&-wrapper
+			position: relative
+			display: inline-flex
+			color: #666666
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			font:
+				family: sans-serif
+				size: 16px
+				weight: 400
+			position: relative
+			width: 320px
+			height: 480px
+			border:
+				width: 4px
+				style: solid
+				color: #1698d9
+				radius: 10px 10px 10px 10px
+			background:
+				color: yellow
+			overflow: hidden
+			transition: all 1s
+			>.btn
+				position: relative
+				margin: auto
+			
+
+
+
+
+//ALWAYS END
+@import "media"

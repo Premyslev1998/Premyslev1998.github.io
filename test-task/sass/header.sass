@@ -1,0 +1,72 @@
+@import "bourbon"
+@import "vars.sass"
+@import "app/libs/owl/assets/owl.carousel"
+
+body
+	margin: 0
+	padding: 0	
+	font-size: 16px
+	min-width: em(560px) 
+	position: relative
+	line-height: 1.5
+	font-family: "OpenSans-Regular", sans-serif
+	overflow-x: hidden
+	color: #111
+
+.trans
+	transition: all .5s ease
+
+.hidden
+	display: none
+
+.button-wrap	
+	text-align: center
+a
+	outline: none!important
+
+
+strong, b 
+	font-family: "RobotoBold", sans-serif
+	font-weight: normal
+
+	
+h1, h2, h3, h4, h5, h6, .button,
+.h1, .h2, .h3, .h4, .h5, .h6
+	font-family: "RobotoCondensedBold", sans-serif
+	font-weight: normal
+	text-transform: uppercase
+
+h2, .h2
+	font-size: 35px
+	font-weight: 400
+	line-height: 40px
+	text-transform: uppercase
+
+h3, .h3
+	font-size: 16px
+	font-weight: 400
+	line-height: 40px
+	text-transform: uppercase
+
+.text-center
+	text-align: center	
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background:
+		color: #fff
+		image: url(../img/preloader.gif)
+		repeat: no-repeat
+		position: center
+	z-index: 999
+	opacity: .4
+
+
+
+
+//ALWAYS END
+@import "media"
